@@ -1,0 +1,53 @@
+.history {
+	&__inner {
+		@apply flex flex-col relative;
+	}
+	&__user {
+		@apply rounded-tl-[8px] flex justify-center items-center flex-col rounded-tr-[8px] bg-[#251b45] p-[25px] max-[475px]:p-4 space-y-4;
+	}
+	&__user-card {
+		@apply flex items-center flex-col justify-center space-y-4;
+	}
+	&__user-avatar {
+		@apply flex items-center justify-center w-[72px] h-[72px] text-2xl rounded-full;
+	}
+	&__user-info {
+		@apply flex flex-col items-center justify-center space-y-1;
+		b {
+			@apply text-xl;
+		}
+		span {
+			@apply text-xs text-[#828f9a];
+		}
+	}
+	&__user-stats {
+		@apply grid gap-4 max-[475px]:w-full max-[475px]:gap-2;
+		li {
+			@apply p-[12px_20px] text-center overflow-hidden rounded-[6px] bg-[#1d1630] flex flex-col items-center justify-center space-y-0.5;
+			span {
+				@apply text-[13px] text-[#828f9a] whitespace-nowrap;
+			}
+			b {
+				@apply text-base;
+			}
+		}
+	}
+	&__content {
+		@apply flex flex-col p-[25px] bg-[#21183e] rounded-bl-[8px] rounded-br-[8px];
+	}
+}
+
+.layout.layout--small {
+	.history {
+		&__user-stats {
+			@apply min-[768px]:grid-cols-4 grid-cols-2;
+		}
+	}
+}
+.layout:not(.layout--small) {
+	.history {
+		&__user-stats {
+			@apply min-[1275px]:grid-cols-4 grid-cols-2;
+		}
+	}
+}

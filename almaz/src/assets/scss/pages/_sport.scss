@@ -1,0 +1,11 @@
+.sport {
+	.wrapper {
+		@apply w-full h-full;
+	}
+	&__inner {
+		@apply rounded-[12px] overflow-hidden relative w-full h-full;
+		.loader {
+			@apply absolute bg-[#251b45] z-[1];
+		}
+	}
+}

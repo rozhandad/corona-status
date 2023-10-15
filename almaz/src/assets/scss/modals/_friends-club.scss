@@ -1,0 +1,47 @@
+.friends-club {
+	.vm--modal {
+		width: 590px !important;
+	}
+	.modal__content {
+		@apply bg-[#362568]/[0.72];
+	}
+	.modal__alert {
+		@apply bg-[#3a2b6c];
+	}
+	.modal__body {
+		@apply bg-[#251b45];
+	}
+	&__inner {
+		@apply p-[20px] flex flex-col space-y-4 w-full;
+	}
+	.auth__or {
+		&:before,
+		&:after {
+			@apply w-[28%];
+		}
+	}
+	&__activate {
+		@apply flex items-center justify-center;
+		button {
+			@apply min-w-[180px];
+		}
+	}
+	&__time {
+		@apply flex items-center;
+		span {
+			@apply text-2xl font-[500] mx-1;
+		}
+	}
+	&__wheel {
+		@apply flex overflow-hidden h-[50px] relative -ml-[20px] -mr-[20px];
+	}
+	&__wheel-inner {
+		@apply absolute left-0 top-0 w-[1920px] h-full flex;
+		li {
+			@apply relative flex items-center justify-center min-w-[100px] m-[0px_4px] bg-[#180f36] rounded-[8px] select-none;
+		}
+	}
+	&__wheel-arrow {
+		@apply absolute top-0 left-1/2 -translate-x-1/2 w-[16px] h-[16px] bg-contain bg-no-repeat z-[2];
+	}
+}

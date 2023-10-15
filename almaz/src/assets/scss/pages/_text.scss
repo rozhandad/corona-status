@@ -1,0 +1,23 @@
+.text-block {
+	&__inner {
+		@apply flex flex-col space-y-4 text-sm;
+		p {
+			@apply leading-[180%];
+		}
+		strong {
+			@apply text-lg;
+		}
+		ul {
+			@apply flex flex-col;
+			li {
+				@apply leading-[180%] py-1 pl-[16px] relative;
+				&:before {
+					@apply content-[''] absolute left-0 top-[18px] w-[6px] h-[2px] bg-white;
+				}
+			}
+		}
+		a {
+			@apply transition-all duration-300 ease-out text-[#3077f7] hover:text-[#79a6f8];
+		}
+	}
+}

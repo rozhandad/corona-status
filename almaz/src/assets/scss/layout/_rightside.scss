@@ -1,0 +1,83 @@
+.rightside {
+	@apply flex flex-col max-[900px]:hidden pt-[15px] shrink-0 pb-[15px] relative w-[280px] z-[20] max-[900px]:pt-0 max-[900px]:fixed max-[900px]:left-0 max-[900px]:top-0 max-[900px]:w-full max-[900px]:z-[1000] max-[900px]:h-[calc(100%_-_38px)];
+	&.active {
+		@apply max-[900px]:block;
+	}
+	&__inner {
+		@apply flex w-full h-full overflow-hidden;
+	}
+	&__inner-block {
+		@apply bg-[#251b45] rounded-[10px] max-[900px]:rounded-none flex flex-col h-full justify-between p-[15px] w-full;
+	}
+	&__wrapper {
+		@apply flex flex-col justify-between h-full;
+	}
+	&__month {
+		@apply w-full rounded-[8px] bg-[#2f2158] flex flex-col shadow-[0px_20px_22px_rgba(0,0,0,0.06)];
+	}
+	&__month-title {
+		@apply uppercase h-[36px] flex items-center justify-center w-full text-xs;
+	}
+	&__month-content {
+		@apply p-[10px] pt-0;
+	}
+	&__item {
+		@apply flex items-center gap-[15px] p-[10px] bg-[#000]/[0.1] rounded-[10px] relative;
+		&:hover {
+			.rightside__overlay {
+				@apply opacity-100 visible;
+			}
+		}
+	}
+	&__item-img {
+		@apply w-[55px] h-[69px] relative shrink-0;
+		img {
+			@apply w-full h-full object-cover rounded-[6px] select-none pointer-events-none;
+		}
+	}
+	&__badge {
+		@apply absolute -left-[5px] -top-[7px] p-[0px_4px] h-[16px] text-xs font-[500] flex items-center justify-center bg-black text-white rounded-[6px];
+		&.rightside__badge--blue {
+			@apply bg-[#077bfb];
+		}
+		&.rightside__badge--green {
+			@apply bg-[#219a1a];
+		}
+		&.rightside__badge--orange {
+			@apply bg-[#ff5721];
+		}
+		&.rightside__badge--purple {
+			@apply bg-[#d004fc];
+		}
+	}
+	&__item-info {
+		@apply text-[13px] flex flex-col space-y-0.5 w-[calc(100%_-_65px)] pr-[15px];
+	}
+	&__game-name {
+		@apply text-[#4986f5] block overflow-hidden text-ellipsis whitespace-nowrap select-none cursor-default;
+	}
+	&__win-amount {
+		@apply text-sm font-[500] block overflow-hidden text-ellipsis whitespace-nowrap select-none cursor-default;
+	}
+	&__user-link {
+		@apply text-[#828f9a] font-[700] text-left block overflow-hidden text-ellipsis whitespace-nowrap select-none cursor-default;
+	}
+	&__overlay {
+		@apply absolute left-0 top-0 w-full h-full rounded-[10px] bg-[#180a2e]/[0.8] flex items-center justify-center z-[1] text-white transition-all duration-[100ms] ease-out opacity-0 invisible;
+		svg {
+			@apply w-[36px] h-[36px];
+		}
+	}
+	&__items {
+		@apply h-[calc(100%_-_135px)] relative pt-[15px];
+	}
+	&__items-inner {
+		@apply h-full overflow-y-scroll;
+		&::-webkit-scrollbar {
+			@apply w-0 h-0;
+		}
+		.rightside__item {
+			@apply mb-[10px] last:mb-0;
+		}
+	}
+}

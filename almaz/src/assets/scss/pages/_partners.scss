@@ -1,0 +1,41 @@
+.partner {
+	&__link {
+		@apply bg-[#251b45] max-[475px]:w-full max-[475px]:items-center flex items-center justify-between text-sm min-[475px]:p-[20px] p-[14px] rounded-[8px] max-[625px]:flex-col max-[625px]:space-y-3 max-[625px]:items-start;
+	}
+	&__link-input {
+		@apply w-[50%] relative max-[625px]:w-full;
+		input {
+			@apply w-full max-[475px]:pl-[10px];
+		}
+	}
+	&__info {
+		@apply rounded-[8px] bg-[#251b45] flex items-stretch max-[625px]:flex-col-reverse;
+	}
+	&__info-left {
+		@apply w-[70%] grid grid-cols-2 max-[625px]:w-full;
+	}
+	&__info-item {
+		@apply min-h-[130px] flex items-center justify-center border-b border-r border-[#2a1f4c] relative [&:nth-last-child(-n+2)]:border-b-0 max-[625px]:[&:nth-child(2n+2)]:border-r-0;
+	}
+	&__info-item-inner {
+		@apply flex flex-col items-center relative z-[1] space-y-1.5;
+		span {
+			@apply text-2xl font-[500] max-[425px]:text-lg leading-[100%];
+		}
+		label {
+			@apply text-[11px] uppercase font-[500] text-[#989daf] leading-[100%] max-[425px]:text-[10px];
+		}
+		svg {
+			@apply min-[475px]:mb-[6px] min-[425px]:text-2xl text-xl text-[#75699d] leading-[100%];
+		}
+		button {
+			margin-top: 14px !important;
+		}
+	}
+	&__info-item-icon {
+		@apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-7xl text-[#7151d7]/[0.05];
+	}
+	&__info-right {
+		@apply w-[30%] relative flex items-center justify-center max-[625px]:-order-[1] max-[625px]:w-full max-[625px]:py-[30px] max-[625px]:border-t max-[625px]:border-[#2a1f4c];
+	}
+}

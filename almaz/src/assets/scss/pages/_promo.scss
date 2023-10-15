@@ -1,0 +1,89 @@
+.promo {
+	&__inner {
+		@apply flex flex-wrap relative -ml-4 -mr-4 gap-y-8 max-[1375px]:-ml-2 max-[1375px]:-mr-2 max-[1375px]:gap-y-4;
+	}
+	&__item {
+		@apply bg-[#251b45] rounded-[8px] items-start overflow-hidden min-[475px]:p-[30px] p-[20px] relative h-full max-[1024px]:h-auto;
+	}
+	&__item-inner {
+		@apply w-full flex flex-col z-[2] relative h-full justify-between;
+		p {
+			@apply max-[475px]:text-[13px];
+		}
+	}
+	&__title {
+		@apply min-[475px]:text-lg text-[15px] font-[500] text-white max-w-[320px] mb-[20px];
+		strong {
+			@apply font-[500] text-[#ffc107];
+		}
+	}
+	&__steps {
+		@apply flex flex-col text-white text-base;
+		li {
+			@apply py-2 flex items-center;
+			strong {
+				@apply font-[500];
+			}
+			img {
+				@apply w-[20px] h-[20px] object-cover mr-3;
+			}
+		}
+	}
+	&__buttons {
+		@apply flex items-center mt-[20px];
+	}
+	&__background-image {
+		@apply absolute left-0 top-0 w-full h-full bg-no-repeat bg-cover bg-center opacity-50;
+	}
+	&__wheel {
+		@apply flex items-stretch gap-4 max-[625px]:flex-col max-[625px]:items-center;
+	}
+	&__wheel-ctx {
+		@apply relative w-[60%] max-[625px]:w-full grid shrink-0;
+		&:before {
+			@apply content-[''] pt-[100%];
+		}
+	}
+	&__wheel-info {
+		@apply w-full flex items-center justify-center;
+	}
+	&__wheel-ctx-img {
+		@apply bg-contain absolute left-0 top-0 w-full h-full bg-no-repeat;
+	}
+	&__wheel-ctx-container {
+		@apply absolute z-[1] left-0 top-0 w-full h-full flex justify-center items-center;
+	}
+	&__wheel-ctx-play {
+		@apply w-[28%] h-[28%] rounded-full flex items-center justify-center bg-[#fccd2c] hover:bg-[#ffe926] text-black text-xs uppercase font-[500] transition-all duration-300 ease-out;
+	}
+	&__wheel-cursor {
+		@apply absolute left-1/2 -translate-x-1/2 top-[20px] z-[2] w-[30px] h-[30px];
+	}
+	&__wheel-text {
+		@apply flex flex-col items-start space-y-3 max-[625px]:w-full;
+		b {
+			@apply min-[475px]:text-lg text-[15px];
+		}
+		label {
+			@apply text-xs text-[#7c7e9a];
+		}
+		p {
+			@apply min-[475px]:text-[14px] text-[13px];
+		}
+	}
+	&__steps-refferal {
+		@apply flex flex-col py-6;
+	}
+	&__step-refferal {
+		@apply flex items-center ml-[10px] p-[19px_0_19px_35px] relative z-[1];
+		img {
+			@apply block w-[50px] h-[50px];
+		}
+		span {
+			@apply text-lg font-[500] ml-[20px];
+		}
+		&:before {
+			@apply content-[attr(data-step)] absolute text-[90px] font-[900] left-0 top-[36px] -z-[1] opacity-[0.08] text-[#aa9ee1];
+		}
+	}
+}
