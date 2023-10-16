@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fa_IR">
+<head>
+
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>
+ابزار آنالیز ریسپانسیو سایت آنلاین
+ -         </title>
+    <!--[if IE 8]><link rel='stylesheet' media='screen' href='css/ie8.css@v=201403261325' type='text/css' /><![endif]-->
+        <link rel="stylesheet" media="screen" href="files/main.css">
+        
+
+    <meta name="author" content="Masih Dindar @ www.BeTalk.ir">
+            <meta name="description" content="ابزار آنالیز رسپانسیو به شما این اجازه را میدهد که در کمترین زمان، سایت خود را در اندازه موبایل و تبلت ها مشاهده نمایید و آن را رسپانسیو کنید...">
+        <meta name="keywords" content="رسپانسیو,ابزار,موبایل,iPhone">
+    <link rel="shortcut icon" href="files/icon.png" type="image/x-icon" />
+
+    
+</head>
+<body>
+
+    
+    
+    <div id='tools'>
+
+<div class='who'>
+                    <p>ابزار رسپانسیو بی تاک <span>·</span>
+                    <a href='default.htm' id='nav-about'>خانه</a> <span>·</span> 
+                    <a href='../https@betalk.ir/default.htm' id='nav-login'>انجمن بی تاک</a></p>
+</div>
+             
+             
+<script type="text/javascript">
+    function goToPage() {
+        var url = document.getElementById('url').value;
+        window.location = "@u=" + url;
+    }
+</script>
+<div class="navaar">
+                            <label for='url'>آدرس سایت خود را با https:// وارد کنید</label>
+                <input id='url' type='text' placeholder="مثال: https://betalk.ir" value=''>
+                <input type='submit' value='برو' id='go entered-website' onclick="goToPage()">
+            </div>
+            
+            
+    </div>
+<section id='devices'>
+              
+		  
+        
+    
+
+                                        
+    
+    <div class='deviceWrap iphone-x-portrait'
+         style="min-width: 427px;">
+
+        
+        <div class='device' style='
+            width: 375px;
+            height: 685px;
+            padding-top: 44px;            padding-bottom: 83px;                                    '><div class='flashingTop' style='height: 44px; width: 375px'><span class='time'></span></div><div class='flashingBottom' style='height: 83px'></div><iframe loading="lazy" src='' id='iphone-x-portrait' style='
+                                                                                '></iframe></div>        <!-- /device -->
+
+    </div><!-- /deviceWrap -->
+
+    <div class='deviceTitle' style="min-width: 427px;">
+        <a href='@u=&device=iphone-x&orientation=portrait'><em>iPhone eXpensive portrait<span> · width: 375px</span></em></a>
+    </div>
+  
+                        
+                                                
+    
+    <div class='deviceWrap iphone-x-landscape'
+         style="min-width: 866px;">
+
+        
+        <div class='device' style='
+            width: 734px;
+            height: 375px;
+                                                            '><iframe loading="lazy" src='' id='iphone-x-landscape' style='
+                                                                                '></iframe></div>        <!-- /device -->
+
+    </div><!-- /deviceWrap -->
+
+    <div class='deviceTitle' style="min-width: 866px;">
+        <a href='@u=&device=iphone-x&orientation=landscape'><em>iPhone eXpensive landscape<span> · width: 734px</span></em></a>
+    </div>
+	
+
+
+                        
+     
+    
+       
+        <div class='footer_links'>
+            تمامی حقوق برای  <a href='../https@betalk.ir/default.htm' id='buyBeerLink'>انجمن بی تاک</a> محفوظ است
+                </div>
+
+    
+            <script type='text/javascript' src='files/talkina.js'></script>
+</body>
+</html>
