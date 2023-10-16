@@ -37,7 +37,7 @@
 <script type="text/javascript">
     function goToPage() {
         var url = document.getElementById('url').value;
-        window.location = "@u=" + url;
+        window.location = "https://rozhandad.github.io/corona-status/responsive/?u=" + url;
     }
 </script>
 <div class="navaar">
